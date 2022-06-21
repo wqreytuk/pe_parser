@@ -1,0 +1,1947 @@
+检测到魔术字符MZ，可能是一个PE文件，继续解析。。。
+定位到PE header偏移量为： 0x000000e0
+PE签名：PE
+machine type(处理器)：34404    IMAGE_FILE_MACHINE_AMD64
+扇区数量：11
+PE文件生成时间（link)：Sat Aug 30 05:42:33 2070
+ 
+符号表偏移量（symbol table)：0x00000000
+符号数量（symbol number)：0
+00f0
+optional header size：240
+0022
+characteristic value：34
+下面输出启用了的标志位：
+	cao草你妈吗Image only. This indicates that the image file is valid and can be run. If this flag is not set, it indicates a linker error.仅适用于镜像文件，这个标志位表明了该镜像文件是合法的，可以正常运行，如果这个标志位没有启用，则说明存在链接器错误
+	Application can handle > 2-GB addresses.此程序能够处理>2GB的地址
+
+？？？？？？？？？？？？？？？？？？？？？？？？？？？？？开始----OPTIONAL HEADER----开始？？？？？？？？？？？？？？？？？？？？？？？？？？？？？
+==================================开始----STD部分----开始==================================
+020b
+magic：PE32+，也就是64位
+链接器主版本号：14
+链接器次版本号：15
+PE文件中.text扇区的大小：436224 bytes
+PE文件中.data扇区的大小：337408 bytes
+PE文件中.bss扇区的大小：0 bytes
+entry point（RVA）地址：0x00082010
+base of code（RVA）地址：0x00001000
+
+==================================结束----STD部分----结束==================================
+
+==================================开始----windows部分----开始==================================
+image base地址：0x1c0000000
+section_alignment：4096 bytes
+file _alignment：512 bytes
+操作系统主版本号：10 
+操作系统次版本号：0 
+镜像文件主版本号：10 
+镜像文件次版本号：0 
+子系统主版本号：10 
+子系统次版本号：0 
+镜像加载到内存之后的大小：806912 bytes
+header总大小（向上取整filealignment）：1024 bytes
+checksum：800494 
+子系统：
+dll chacacteristic：
+	DLL can be relocated at load time.DLL在加载的时候可以被重新定位
+	Image is NX compatible。 NX意为no-execute是一种内存保护措施
+	Image supports Control Flow Guard.。 简称CFG，可以在cl编译选择中指定，用于抵抗内存损坏漏洞
+size_of_stack_reserve_64：0x000040000 bytes
+size_of_stack_commit_64：0x000001000 bytes
+size_of_heap_reserve_64：0x000100000 bytes
+size_of_heap_commit_64：0x000001000 bytes
+data directory数量：16
+
+==================================结束----windows部分----结束==================================
+
+==================================开始----data directory部分----开始==================================
+export_table：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+import_table：
+	地址（RVA）：	0x00041c98
+	size：		120 bytes
+
+resource_table：
+	地址（RVA）：	0x00084000
+	size：		246776 bytes
+
+exception_table：
+	地址（RVA）：	0x0003c000
+	size：		17040 bytes
+
+certificate_table：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+base_relocation_table：
+	地址（RVA）：	0x000c1000
+	size：		148 bytes
+
+debug：
+	地址（RVA）：	0x00032850
+	size：		84 bytes
+
+architecture：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+global_ptr：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+tls_table：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+load_config_table：
+	地址（RVA）：	0x00031020
+	size：		264 bytes
+
+bound_import：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+iat：
+	地址（RVA）：	0x00041000
+	size：		3208 bytes
+
+delay_import_descriptor：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+clr_runtime_header：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+
+==================================结束----data directory部分----结束==================================
+
+？？？？？？？？？？？？？？？？？？？？？？？？？？？？？结束----OPTIONAL HEADER----结束？？？？？？？？？？？？？？？？？？？？？？？？？？？？？
+
+￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥开始----SECTION HEADERs----开始￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.text
+virtual size：195900 bytes
+virtual_address（RVA）：0x00001000
+size_of_raw_data：196096 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x00000400
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains executable code.
+	The section is not pageable.
+	The section can be executed as code.
+	The section can be read.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.rdata
+virtual size：37580 bytes
+virtual_address（RVA）：0x00031000
+size_of_raw_data：37888 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x00030200
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section is not pageable.
+	The section can be read.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.data
+virtual size：3076 bytes
+virtual_address（RVA）：0x0003b000
+size_of_raw_data：512 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x00039600
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section is not pageable.
+	The section can be read.
+	The section can be written to.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.pdata
+virtual size：17040 bytes
+virtual_address（RVA）：0x0003c000
+size_of_raw_data：17408 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x00039800
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section is not pageable.
+	The section can be read.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.idata
+virtual size：16684 bytes
+virtual_address（RVA）：0x00041000
+size_of_raw_data：16896 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x0003dc00
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section is not pageable.
+	The section can be read.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：ALMOSTRO
+virtual size：952 bytes
+virtual_address（RVA）：0x00046000
+size_of_raw_data：1024 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x00041e00
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section is not pageable.
+	The section can be read.
+	The section can be written to.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：PAGE
+virtual size：238447 bytes
+virtual_address（RVA）：0x00047000
+size_of_raw_data：238592 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x00042200
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains executable code.
+	The section can be executed as code.
+	The section can be read.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：INIT
+virtual size：1104 bytes
+virtual_address（RVA）：0x00082000
+size_of_raw_data：1536 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x0007c600
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains executable code.
+	The section can be discarded as needed.
+	The section can be executed as code.
+	The section can be read.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：GFIDS
+virtual size：804 bytes
+virtual_address（RVA）：0x00083000
+size_of_raw_data：1024 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x0007cc00
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section can be discarded as needed.
+	The section can be read.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.rsrc
+virtual size：246776 bytes
+virtual_address（RVA）：0x00084000
+size_of_raw_data：246784 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x0007d000
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section can be discarded as needed.
+	The section can be read.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.reloc
+virtual size：12612 bytes
+virtual_address（RVA）：0x000c1000
+size_of_raw_data：12800 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x000b9400
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section can be discarded as needed.
+	The section can be read.
+
+
+￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥结束----SECTION HEADERs----结束￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@开始----解析data directory----开始@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+--------------------------import table
+	Import Lookup Table RVA：0x41db8
+	时间戳：0x0
+	forward chain：0x0
+	DLL name address(RVA)：0x4324c
+小伙子你怎么回事？
+小伙子你怎么回事？
+小伙子你怎么回事？
+DLL的名字是：ntoskrnl.exe
+	Import Address Table RVA：0x410a8
+没有绑定
+HINT/NAME table RVA：
+	0x42b62
+HINT：0x155
+函数名：	ExpInterlockedPushEntrySList
+HINT/NAME table RVA：
+	0x42b82
+HINT：0x3cd
+函数名：	KeAcquireSpinLockRaiseToDpc
+HINT/NAME table RVA：
+	0x42ba0
+HINT：0x482
+函数名：	KeReleaseSpinLock
+HINT/NAME table RVA：
+	0x42bb4
+HINT：0x55e
+函数名：	MmUnmapLockedPages
+HINT/NAME table RVA：
+	0x42bca
+HINT：0x532
+函数名：	MmMapLockedPagesSpecifyCache
+HINT/NAME table RVA：
+	0x42bea
+HINT：0x27a
+函数名：	IoBuildPartialMdl
+HINT/NAME table RVA：
+	0x42bfe
+HINT：0x3ee
+函数名：	KeDelayExecutionThread
+HINT/NAME table RVA：
+	0x42c18
+HINT：0x27e
+函数名：	IoCancelIrp
+HINT/NAME table RVA：
+	0x42c26
+HINT：0x60d
+函数名：	PcwRegister
+HINT/NAME table RVA：
+	0x42c34
+HINT：0x60e
+函数名：	PcwUnregister
+HINT/NAME table RVA：
+	0x42c44
+HINT：0x60c
+函数名：	PcwCreateInstance
+HINT/NAME table RVA：
+	0x42c58
+HINT：0x60b
+函数名：	PcwCloseInstance
+HINT/NAME table RVA：
+	0x42c6c
+HINT：0x60a
+函数名：	PcwAddInstance
+HINT/NAME table RVA：
+	0x42c7e
+HINT：0x45f
+函数名：	KeQueryMaximumProcessorCountEx
+HINT/NAME table RVA：
+	0x42ca0
+HINT：0x80c
+函数名：	RtlInitUnicodeString
+HINT/NAME table RVA：
+	0x42cb8
+HINT：0x3c2
+函数名：	KeAcquireGuardedMutex
+HINT/NAME table RVA：
+	0x42cd0
+HINT：0x478
+函数名：	KeReleaseGuardedMutex
+HINT/NAME table RVA：
+	0x42ce8
+HINT：0x9d
+函数名：	ExAllocatePoolWithTag
+HINT/NAME table RVA：
+	0x42d00
+HINT：0x421
+函数名：	KeInitializeGuardedMutex
+HINT/NAME table RVA：
+	0x42d1c
+HINT：0xaf
+函数名：	ExDeleteResourceLite
+HINT/NAME table RVA：
+	0x42d34
+HINT：0x382
+函数名：	IoUninitializeWorkItem
+HINT/NAME table RVA：
+	0x42d4e
+HINT：0x2fe
+函数名：	IoInitializeWorkItem
+HINT/NAME table RVA：
+	0x42d66
+HINT：0x31e
+函数名：	IoQueueWorkItem
+HINT/NAME table RVA：
+	0x42d78
+HINT：0x8b
+函数名：	ExAcquireResourceSharedLite
+HINT/NAME table RVA：
+	0x42d96
+HINT：0x115
+函数名：	ExReleaseResourceLite
+HINT/NAME table RVA：
+	0x42dae
+HINT：0x8a
+函数名：	ExAcquireResourceExclusiveLite
+HINT/NAME table RVA：
+	0x42dd0
+HINT：0x373
+函数名：	IoSizeofWorkItem
+HINT/NAME table RVA：
+	0x42de4
+HINT：0xd5
+函数名：	ExInitializeResourceLite
+HINT/NAME table RVA：
+	0x42e00
+HINT：0xb02
+函数名：	_vsnwprintf
+HINT/NAME table RVA：
+	0x42e0e
+HINT：0x26d
+函数名：	IoAllocateMdl
+HINT/NAME table RVA：
+	0x42e1e
+HINT：0x2c1
+函数名：	IoFreeMdl
+HINT/NAME table RVA：
+	0x42e2a
+HINT：0x45a
+函数名：	KeQueryHighestNodeNumber
+HINT/NAME table RVA：
+	0x42e46
+HINT：0x460
+函数名：	KeQueryNodeActiveAffinity
+HINT/NAME table RVA：
+	0x42e62
+HINT：0x4ae
+函数名：	KeSetSystemGroupAffinityThread
+HINT/NAME table RVA：
+	0x42e84
+HINT：0x497
+函数名：	KeRevertToUserGroupAffinityThread
+HINT/NAME table RVA：
+	0x42ea8
+HINT：0x40e
+函数名：	KeGetCurrentNodeNumber
+HINT/NAME table RVA：
+	0x42ec2
+HINT：0x62
+函数名：	DbgkWerCaptureLiveKernelDump
+HINT/NAME table RVA：
+	0x42ee2
+HINT：0xad9
+函数名：	__C_specific_handler
+HINT/NAME table RVA：
+	0x42efa
+HINT：0x2c4
+函数名：	IoFreeWorkItem
+HINT/NAME table RVA：
+	0x42f0c
+HINT：0x270
+函数名：	IoAllocateWorkItem
+HINT/NAME table RVA：
+	0x42b2c
+HINT：0x500
+函数名：	MmBuildMdlForNonPagedPool
+HINT/NAME table RVA：
+	0x42f36
+HINT：0x3ae
+函数名：	IofCompleteRequest
+HINT/NAME table RVA：
+	0x42f4c
+HINT：0x6ac
+函数名：	PsGetProcessServerSilo
+HINT/NAME table RVA：
+	0x42f66
+HINT：0x2ee
+函数名：	IoGetRequestorProcess
+HINT/NAME table RVA：
+	0x42f7e
+HINT：0x6cf
+函数名：	PsIsHostSilo
+HINT/NAME table RVA：
+	0x42f8e
+HINT：0x2d0
+函数名：	IoGetCurrentProcess
+HINT/NAME table RVA：
+	0x42fa4
+HINT：0x664
+函数名：	ProbeForRead
+HINT/NAME table RVA：
+	0x42fb4
+HINT：0x3dc
+函数名：	KeAttachProcess
+HINT/NAME table RVA：
+	0x42fc6
+HINT：0x3f4
+函数名：	KeDetachProcess
+HINT/NAME table RVA：
+	0x42fd8
+HINT：0x51d
+函数名：	MmGetSystemRoutineAddress
+HINT/NAME table RVA：
+	0x42ff4
+HINT：0x3a1
+函数名：	IoWMIRegistrationControl
+HINT/NAME table RVA：
+	0x43010
+HINT：0x7fc
+函数名：	RtlGetVersion
+HINT/NAME table RVA：
+	0x43020
+HINT：0xd1
+函数名：	ExInitializeLookasideListEx
+HINT/NAME table RVA：
+	0x4303e
+HINT：0x420
+函数名：	KeInitializeEvent
+HINT/NAME table RVA：
+	0x43052
+HINT：0xac
+函数名：	ExDeleteLookasideListEx
+HINT/NAME table RVA：
+	0x4306c
+HINT：0x4a1
+函数名：	KeSetEvent
+HINT/NAME table RVA：
+	0x4307a
+HINT：0x4cb
+函数名：	KeWaitForSingleObject
+HINT/NAME table RVA：
+	0x43092
+HINT：0x70
+函数名：	EtwRegister
+HINT/NAME table RVA：
+	0x430a0
+HINT：0x295
+函数名：	IoCreateDevice
+HINT/NAME table RVA：
+	0x430b2
+HINT：0x29b
+函数名：	IoCreateNotificationEvent
+HINT/NAME table RVA：
+	0x430ce
+HINT：0x607
+函数名：	ObfReferenceObject
+HINT/NAME table RVA：
+	0x430e4
+HINT：0xa00
+函数名：	ZwClose
+HINT/NAME table RVA：
+	0x430ee
+HINT：0x605
+函数名：	ObfDereferenceObject
+HINT/NAME table RVA：
+	0x43106
+HINT：0x2ac
+函数名：	IoDeleteDevice
+HINT/NAME table RVA：
+	0x43118
+HINT：0x75
+函数名：	EtwUnregister
+HINT/NAME table RVA：
+	0x43128
+HINT：0x4b8
+函数名：	KeStackAttachProcess
+HINT/NAME table RVA：
+	0x43140
+HINT：0x4c6
+函数名：	KeUnstackDetachProcess
+HINT/NAME table RVA：
+	0x4315a
+HINT：0x3cb
+函数名：	KeAcquireSpinLockAtDpcLevel
+HINT/NAME table RVA：
+	0x43178
+HINT：0x484
+函数名：	KeReleaseSpinLockFromDpcLevel
+HINT/NAME table RVA：
+	0x43198
+HINT：0x809
+函数名：	RtlInitString
+HINT/NAME table RVA：
+	0x431a8
+HINT：0xbf
+函数名：	ExFlushLookasideListEx
+HINT/NAME table RVA：
+	0x431c2
+HINT：0x877
+函数名：	RtlOemStringToUnicodeString
+HINT/NAME table RVA：
+	0x431e0
+HINT：0x5f5
+函数名：	ObReferenceObjectByHandle
+HINT/NAME table RVA：
+	0x431fc
+HINT：0x3e4
+函数名：	KeClearEvent
+HINT/NAME table RVA：
+	0x4320c
+HINT：0x2ed
+函数名：	IoGetRelatedDeviceObject
+HINT/NAME table RVA：
+	0x43228
+HINT：0x31d
+函数名：	IoQueueThreadIrp
+HINT/NAME table RVA：
+	0x4323c
+HINT：0x3ad
+函数名：	IofCallDriver
+HINT/NAME table RVA：
+	0x4510a
+HINT：0x10f
+函数名：	ExReleasePushLockEx
+HINT/NAME table RVA：
+	0x42b1e
+HINT：0x556
+函数名：	MmSizeOfMdl
+HINT/NAME table RVA：
+	0x42b06
+HINT：0x428
+函数名：	KeInitializeSpinLock
+HINT/NAME table RVA：
+	0x42af2
+HINT：0xc4
+函数名：	ExFreePoolWithTag
+HINT/NAME table RVA：
+	0x42ad2
+HINT：0x9e
+函数名：	ExAllocatePoolWithTagPriority
+HINT/NAME table RVA：
+	0x450fe
+HINT：0xa4e
+函数名：	ZwOpenKey
+HINT/NAME table RVA：
+	0x450ec
+HINT：0xa8c
+函数名：	ZwQueryValueKey
+HINT/NAME table RVA：
+	0x42b48
+HINT：0x53f
+函数名：	MmMdlPageContentsState
+HINT/NAME table RVA：
+	0x42abe
+HINT：0xed
+函数名：	ExQueryDepthSList
+HINT/NAME table RVA：
+	0x42aa0
+HINT：0x154
+函数名：	ExpInterlockedPopEntrySList
+HINT/NAME table RVA：
+	0x42a88
+HINT：0x442
+函数名：	KeLeaveCriticalRegion
+HINT/NAME table RVA：
+	0x42a70
+HINT：0x3f7
+函数名：	KeEnterCriticalRegion
+HINT/NAME table RVA：
+	0x42a54
+HINT：0x746
+函数名：	RtlCaptureStackBackTrace
+HINT/NAME table RVA：
+	0x42a44
+HINT：0x3de
+函数名：	KeBugCheckEx
+HINT/NAME table RVA：
+	0x42a36
+HINT：0x446
+函数名：	KeLowerIrql
+HINT/NAME table RVA：
+	0x42a28
+HINT：0x4cd
+函数名：	KfRaiseIrql
+HINT/NAME table RVA：
+	0x42a14
+HINT：0x805
+函数名：	RtlInitAnsiString
+HINT/NAME table RVA：
+	0x42a00
+HINT：0x7b
+函数名：	EtwWriteTransfer
+HINT/NAME table RVA：
+	0x429e8
+HINT：0x6c
+函数名：	EtwActivityIdControl
+HINT/NAME table RVA：
+	0x429dc
+HINT：0x2c0
+函数名：	IoFreeIrp
+HINT/NAME table RVA：
+	0x429ca
+HINT：0x26c
+函数名：	IoAllocateIrpEx
+HINT/NAME table RVA：
+	0x429b0
+HINT：0x289
+函数名：	IoClearActivityIdThread
+HINT/NAME table RVA：
+	0x42f22
+HINT：0x31f
+函数名：	IoQueueWorkItemEx
+HINT/NAME table RVA：
+	0x42998
+HINT：0x350
+函数名：	IoSetActivityIdThread
+HINT/NAME table RVA：
+	0x44452
+HINT：0x4e8
+函数名：	LsaFreeReturnBuffer
+HINT/NAME table RVA：
+	0x44430
+HINT：0x4ea
+函数名：	LsaLookupAuthenticationPackage
+HINT/NAME table RVA：
+	0x44410
+HINT：0x4e6
+函数名：	LsaCallAuthenticationPackage
+HINT/NAME table RVA：
+	0x443f4
+HINT：0x4e7
+函数名：	LsaDeregisterLogonProcess
+HINT/NAME table RVA：
+	0x443da
+HINT：0x4eb
+函数名：	LsaRegisterLogonProcess
+HINT/NAME table RVA：
+	0x443c8
+HINT：0x6ff
+函数名：	PsRevertToSelf
+HINT/NAME table RVA：
+	0x443a4
+HINT：0x95
+函数名：	ExAcquireSpinLockSharedAtDpcLevel
+HINT/NAME table RVA：
+	0x4437e
+HINT：0x11d
+函数名：	ExReleaseSpinLockSharedFromDpcLevel
+HINT/NAME table RVA：
+	0x4435c
+HINT：0x135
+函数名：	ExTryAcquirePushLockExclusiveEx
+HINT/NAME table RVA：
+	0x4434a
+HINT：0x9f
+函数名：	ExAllocateTimer
+HINT/NAME table RVA：
+	0x44336
+HINT：0x73
+函数名：	EtwSetInformation
+HINT/NAME table RVA：
+	0x44326
+HINT：0xb0
+函数名：	ExDeleteTimer
+HINT/NAME table RVA：
+	0x44318
+HINT：0x125
+函数名：	ExSetTimer
+HINT/NAME table RVA：
+	0x435fa
+HINT：0x4c9
+函数名：	KeWaitForMultipleObjects
+HINT/NAME table RVA：
+	0x43616
+HINT：0x147
+函数名：	ExWaitForRundownProtectionRelease
+HINT/NAME table RVA：
+	0x4363a
+HINT：0xd6
+函数名：	ExInitializeRundownProtection
+HINT/NAME table RVA：
+	0x4365a
+HINT：0x461
+函数名：	KeQueryNodeMaximumProcessorCount
+HINT/NAME table RVA：
+	0x4367e
+HINT：0x71b
+函数名：	PsThreadType
+HINT/NAME table RVA：
+	0x4368e
+HINT：0x8c
+函数名：	ExAcquireRundownProtection
+HINT/NAME table RVA：
+	0x436ac
+HINT：0x2a2
+函数名：	IoCreateSystemThread
+HINT/NAME table RVA：
+	0x436c4
+HINT：0x3fc
+函数名：	KeExpandKernelStackAndCalloutEx
+HINT/NAME table RVA：
+	0x436e6
+HINT：0x4a9
+函数名：	KeSetPriorityThread
+HINT/NAME table RVA：
+	0x436fc
+HINT：0x116
+函数名：	ExReleaseRundownProtection
+HINT/NAME table RVA：
+	0x4371a
+HINT：0x153
+函数名：	ExpInterlockedFlushSList
+HINT/NAME table RVA：
+	0x43736
+HINT：0x261
+函数名：	InterlockedPushListSList
+HINT/NAME table RVA：
+	0x43752
+HINT：0x260
+函数名：	InitializeSListHead
+HINT/NAME table RVA：
+	0x43768
+HINT：0xb3c
+函数名：	strncmp
+HINT/NAME table RVA：
+	0x43772
+HINT：0xa0b
+函数名：	ZwCreateFile
+HINT/NAME table RVA：
+	0x43782
+HINT：0x451
+函数名：	KeQueryActiveProcessorCountEx
+HINT/NAME table RVA：
+	0x437a2
+HINT：0x2c5
+函数名：	IoGetActivityIdIrp
+HINT/NAME table RVA：
+	0x437b8
+HINT：0x8ef
+函数名：	RtlUpcaseUnicodeString
+HINT/NAME table RVA：
+	0x437d2
+HINT：0x281
+函数名：	IoCheckFunctionAccess
+HINT/NAME table RVA：
+	0x437ea
+HINT：0x55b
+函数名：	MmUnlockPages
+HINT/NAME table RVA：
+	0x437fa
+HINT：0x26b
+函数名：	IoAllocateIrp
+HINT/NAME table RVA：
+	0x4380a
+HINT：0x34e
+函数名：	IoReuseIrp
+HINT/NAME table RVA：
+	0x43818
+HINT：0x190
+函数名：	FsRtlFreeExtraCreateParameterList
+HINT/NAME table RVA：
+	0x4383c
+HINT：0x7fd
+函数名：	RtlHashUnicodeString
+HINT/NAME table RVA：
+	0x43854
+HINT：0x7a3
+函数名：	RtlEqualUnicodeString
+HINT/NAME table RVA：
+	0x4386c
+HINT：0x88
+函数名：	ExAcquirePushLockExclusiveEx
+HINT/NAME table RVA：
+	0x4388c
+HINT：0x110
+函数名：	ExReleasePushLockExclusiveEx
+HINT/NAME table RVA：
+	0x438ac
+HINT：0xa0a
+函数名：	ZwCreateEvent
+HINT/NAME table RVA：
+	0x438bc
+HINT：0x58a
+函数名：	NtFsControlFile
+HINT/NAME table RVA：
+	0x438ce
+HINT：0xad6
+函数名：	ZwWaitForSingleObject
+HINT/NAME table RVA：
+	0x438e6
+HINT：0x574
+函数名：	NtClose
+HINT/NAME table RVA：
+	0x438f0
+HINT：0x853
+函数名：	RtlLengthSecurityDescriptor
+HINT/NAME table RVA：
+	0x4390e
+HINT：0x2cb
+函数名：	IoGetBaseFileSystemDeviceObject
+HINT/NAME table RVA：
+	0x43930
+HINT：0x279
+函数名：	IoBuildDeviceIoControlRequest
+HINT/NAME table RVA：
+	0x43950
+HINT：0xa32
+函数名：	ZwFsControlFile
+HINT/NAME table RVA：
+	0x43962
+HINT：0x299
+函数名：	IoCreateFileEx
+HINT/NAME table RVA：
+	0x43974
+HINT：0x595
+函数名：	NtOpenFile
+HINT/NAME table RVA：
+	0x43982
+HINT：0x359
+函数名：	IoSetFileOrigin
+HINT/NAME table RVA：
+	0x43994
+HINT：0x6d7
+函数名：	PsIsThreadImpersonating
+HINT/NAME table RVA：
+	0x439ae
+HINT：0x861
+函数名：	RtlMapGenericMask
+HINT/NAME table RVA：
+	0x439c2
+HINT：0x924
+函数名：	SeCaptureSubjectContext
+HINT/NAME table RVA：
+	0x439dc
+HINT：0x93d
+函数名：	SeFreePrivileges
+HINT/NAME table RVA：
+	0x439f0
+HINT：0x95f
+函数名：	SeReleaseSubjectContext
+HINT/NAME table RVA：
+	0x43a0a
+HINT：0x76c
+函数名：	RtlCopyUnicodeString
+HINT/NAME table RVA：
+	0x43a22
+HINT：0x739
+函数名：	RtlAppendUnicodeToString
+HINT/NAME table RVA：
+	0x43a3e
+HINT：0x738
+函数名：	RtlAppendUnicodeStringToString
+HINT/NAME table RVA：
+	0x43a60
+HINT：0x8d3
+函数名：	RtlTimeToTimeFields
+HINT/NAME table RVA：
+	0x43a76
+HINT：0x8cf
+函数名：	RtlTimeFieldsToTime
+HINT/NAME table RVA：
+	0x43a8c
+HINT：0xa76
+函数名：	ZwQueryInformationFile
+HINT/NAME table RVA：
+	0x43aa6
+HINT：0x3c4
+函数名：	KeAcquireInStackQueuedSpinLock
+HINT/NAME table RVA：
+	0x43ac8
+HINT：0x47a
+函数名：	KeReleaseInStackQueuedSpinLock
+HINT/NAME table RVA：
+	0x43aea
+HINT：0x468
+函数名：	KeQueryUnbiasedInterruptTime
+HINT/NAME table RVA：
+	0x43b0a
+HINT：0x42a
+函数名：	KeInitializeTimer
+HINT/NAME table RVA：
+	0x43b1e
+HINT：0x41c
+函数名：	KeInitializeDpc
+HINT/NAME table RVA：
+	0x43b30
+HINT：0x466
+函数名：	KeQueryTimeIncrement
+HINT/NAME table RVA：
+	0x43b48
+HINT：0x3df
+函数名：	KeCancelTimer
+HINT/NAME table RVA：
+	0x43b58
+HINT：0xf2
+函数名：	ExQueueWorkItem
+HINT/NAME table RVA：
+	0x43b6a
+HINT：0x49f
+函数名：	KeSetCoalescableTimer
+HINT/NAME table RVA：
+	0x43b82
+HINT：0x94
+函数名：	ExAcquireSpinLockShared
+HINT/NAME table RVA：
+	0x43b9c
+HINT：0x11c
+函数名：	ExReleaseSpinLockShared
+HINT/NAME table RVA：
+	0x43bb6
+HINT：0x92
+函数名：	ExAcquireSpinLockExclusive
+HINT/NAME table RVA：
+	0x43bd4
+HINT：0x11a
+函数名：	ExReleaseSpinLockExclusive
+HINT/NAME table RVA：
+	0x43bf2
+HINT：0x18c
+函数名：	FsRtlFindExtraCreateParameter
+HINT/NAME table RVA：
+	0x43c12
+HINT：0x1b8
+函数名：	FsRtlIsEcpAcknowledged
+HINT/NAME table RVA：
+	0x43c2c
+HINT：0x210
+函数名：	FsRtlRemoveExtraCreateParameter
+HINT/NAME table RVA：
+	0x43c4e
+HINT：0x18f
+函数名：	FsRtlFreeExtraCreateParameter
+HINT/NAME table RVA：
+	0x43c6e
+HINT：0x89
+函数名：	ExAcquirePushLockSharedEx
+HINT/NAME table RVA：
+	0x43c8a
+HINT：0x111
+函数名：	ExReleasePushLockSharedEx
+HINT/NAME table RVA：
+	0x43ca6
+HINT：0x298
+函数名：	IoCreateFile
+HINT/NAME table RVA：
+	0x43cb6
+HINT：0x3c5
+函数名：	KeAcquireInStackQueuedSpinLockAtDpcLevel
+HINT/NAME table RVA：
+	0x43ce2
+HINT：0x47c
+函数名：	KeReleaseInStackQueuedSpinLockFromDpcLevel
+HINT/NAME table RVA：
+	0x43d10
+HINT：0x5b4
+函数名：	NtQuerySecurityObject
+HINT/NAME table RVA：
+	0x43d28
+HINT：0x1b2
+函数名：	FsRtlInsertExtraCreateParameter
+HINT/NAME table RVA：
+	0x43d4a
+HINT：0x163
+函数名：	FsRtlAllocateExtraCreateParameterList
+HINT/NAME table RVA：
+	0x43d72
+HINT：0x161
+函数名：	FsRtlAllocateExtraCreateParameter
+HINT/NAME table RVA：
+	0x43d96
+HINT：0x757
+函数名：	RtlCompareMemory
+HINT/NAME table RVA：
+	0x43daa
+HINT：0x5ab
+函数名：	NtQueryInformationFile
+HINT/NAME table RVA：
+	0x43dc4
+HINT：0x8ee
+函数名：	RtlUpcaseUnicodeChar
+HINT/NAME table RVA：
+	0x43ddc
+HINT：0x492
+函数名：	KeResetEvent
+HINT/NAME table RVA：
+	0x43dec
+HINT：0xa8e
+函数名：	ZwQueryVolumeInformationFile
+HINT/NAME table RVA：
+	0x43e0c
+HINT：0x735
+函数名：	RtlAnsiStringToUnicodeString
+HINT/NAME table RVA：
+	0x43e2c
+HINT：0x7d2
+函数名：	RtlFreeUnicodeString
+HINT/NAME table RVA：
+	0x43e44
+HINT：0x676
+函数名：	PsDereferencePrimaryToken
+HINT/NAME table RVA：
+	0x43e60
+HINT：0x674
+函数名：	PsDereferenceImpersonationToken
+HINT/NAME table RVA：
+	0x43e82
+HINT：0x6c8
+函数名：	PsImpersonateClient
+HINT/NAME table RVA：
+	0x43e98
+HINT：0x6eb
+函数名：	PsReferenceImpersonationToken
+HINT/NAME table RVA：
+	0x43eb8
+HINT：0xdb
+函数名：	ExInterlockedAddUlong
+HINT/NAME table RVA：
+	0x43ed0
+HINT：0x669
+函数名：	PsAssignImpersonationToken
+HINT/NAME table RVA：
+	0x43eee
+HINT：0x7a1
+函数名：	RtlEqualSid
+HINT/NAME table RVA：
+	0x43efc
+HINT：0x5f0
+函数名：	ObOpenObjectByPointer
+HINT/NAME table RVA：
+	0x43f14
+HINT：0xa25
+函数名：	ZwDuplicateObject
+HINT/NAME table RVA：
+	0x43f28
+HINT：0x29a
+函数名：	IoCreateFileSpecifyDeviceObjectHint
+HINT/NAME table RVA：
+	0x43f4e
+HINT：0x5db
+函数名：	ObCloseHandle
+HINT/NAME table RVA：
+	0x43f5e
+HINT：0xa6
+函数名：	ExConvertExclusiveToSharedLite
+HINT/NAME table RVA：
+	0x43f80
+HINT：0xea
+函数名：	ExLocalTimeToSystemTime
+HINT/NAME table RVA：
+	0x43f9a
+HINT：0x946
+函数名：	SeLockSubjectContext
+HINT/NAME table RVA：
+	0x43fb2
+HINT：0x951
+函数名：	SeQueryAuthenticationIdToken
+HINT/NAME table RVA：
+	0x43fd2
+HINT：0x976
+函数名：	SeUnlockSubjectContext
+HINT/NAME table RVA：
+	0x43fec
+HINT：0x952
+函数名：	SeQueryInformationToken
+HINT/NAME table RVA：
+	0x44006
+HINT：0x5c9
+函数名：	NtSetInformationThread
+HINT/NAME table RVA：
+	0x44020
+HINT：0x81e
+函数名：	RtlInt64ToUnicodeString
+HINT/NAME table RVA：
+	0x4403a
+HINT：0x854
+函数名：	RtlLengthSid
+HINT/NAME table RVA：
+	0x4404a
+HINT：0x5f6
+函数名：	ObReferenceObjectByHandleWithTag
+HINT/NAME table RVA：
+	0x4406e
+HINT：0x5c6
+函数名：	NtSetInformationFile
+HINT/NAME table RVA：
+	0x44086
+HINT：0x280
+函数名：	IoCheckEaBufferValidity
+HINT/NAME table RVA：
+	0x440a0
+HINT：0x8f9
+函数名：	RtlValidRelativeSecurityDescriptor
+HINT/NAME table RVA：
+	0x440c6
+HINT：0x20f
+函数名：	FsRtlRemoveDotsFromPath
+HINT/NAME table RVA：
+	0x440e0
+HINT：0x197
+函数名：	FsRtlGetNextExtraCreateParameter
+HINT/NAME table RVA：
+	0x44104
+HINT：0x363
+函数名：	IoSetIoPriorityHint
+HINT/NAME table RVA：
+	0x4411a
+HINT：0x28
+函数名：	CcMdlWriteAbort
+HINT/NAME table RVA：
+	0x4412c
+HINT：0x19c
+函数名：	FsRtlGetSupportedFeatures
+HINT/NAME table RVA：
+	0x44148
+HINT：0x186
+函数名：	FsRtlDoesNameContainWildCards
+HINT/NAME table RVA：
+	0x44168
+HINT：0x283
+函数名：	IoCheckQuerySetFileInformation
+HINT/NAME table RVA：
+	0x4418a
+HINT：0x284
+函数名：	IoCheckQuerySetVolumeInformation
+HINT/NAME table RVA：
+	0x441ae
+HINT：0x852
+函数名：	RtlLengthRequiredSid
+HINT/NAME table RVA：
+	0x441c6
+HINT：0x5a7
+函数名：	NtQueryEaFile
+HINT/NAME table RVA：
+	0x441d6
+HINT：0x5b7
+函数名：	NtQueryVolumeInformationFile
+HINT/NAME table RVA：
+	0x441f6
+HINT：0x5b2
+函数名：	NtQueryQuotaInformationFile
+HINT/NAME table RVA：
+	0x44214
+HINT：0xb08
+函数名：	_wcsnicmp
+HINT/NAME table RVA：
+	0x44220
+HINT：0x285
+函数名：	IoCheckQuotaBufferValidity
+HINT/NAME table RVA：
+	0x4423e
+HINT：0x5c3
+函数名：	NtSetEaFile
+HINT/NAME table RVA：
+	0x4424c
+HINT：0x5cf
+函数名：	NtSetVolumeInformationFile
+HINT/NAME table RVA：
+	0x4426a
+HINT：0x5ce
+函数名：	NtSetSecurityObject
+HINT/NAME table RVA：
+	0x44280
+HINT：0x5cd
+函数名：	NtSetQuotaInformationFile
+HINT/NAME table RVA：
+	0x4429c
+HINT：0x96b
+函数名：	SeSinglePrivilegeCheck
+HINT/NAME table RVA：
+	0x442b6
+HINT：0x93b
+函数名：	SeExports
+HINT/NAME table RVA：
+	0x442c2
+HINT：0xa91
+函数名：	ZwReadFile
+HINT/NAME table RVA：
+	0x442d0
+HINT：0xad4
+函数名：	ZwUpdateWnfStateData
+HINT/NAME table RVA：
+	0x442e8
+HINT：0x2e2
+函数名：	IoGetGenericIrpExtension
+HINT/NAME table RVA：
+	0x44304
+HINT：0x43d
+函数名：	KeIsExecutingDpc
+HINT/NAME table RVA：
+	0x45120
+HINT：0xada
+函数名：	__chkstk
+--------------------------import table
+	Import Lookup Table RVA：0x41d10
+	时间戳：0x0
+	forward chain：0x0
+	DLL name address(RVA)：0x43276
+小伙子你怎么回事？
+小伙子你怎么回事？
+小伙子你怎么回事？
+DLL的名字是：HAL.dll
+	Import Address Table RVA：0x41000
+没有绑定
+HINT/NAME table RVA：
+	0x4325a
+HINT：0x53
+函数名：	KeQueryPerformanceCounter
+--------------------------import table
+	Import Lookup Table RVA：0x41d20
+	时间戳：0x0
+	forward chain：0x0
+	DLL name address(RVA)：0x43294
+小伙子你怎么回事？
+小伙子你怎么回事？
+小伙子你怎么回事？
+DLL的名字是：TDI.SYS
+	Import Address Table RVA：0x41010
+没有绑定
+HINT/NAME table RVA：
+	0x4327e
+HINT：0x17
+函数名：	TdiCopyMdlToBuffer
+--------------------------import table
+	Import Lookup Table RVA：0x42568
+	时间戳：0x0
+	forward chain：0x0
+	DLL name address(RVA)：0x435ee
+小伙子你怎么回事？
+小伙子你怎么回事？
+小伙子你怎么回事？
+DLL的名字是：srvnet.sys
+	Import Address Table RVA：0x41858
+没有绑定
+HINT/NAME table RVA：
+	0x435a6
+HINT：0x9e
+函数名：	SrvNetQueryConnectionInformation
+HINT/NAME table RVA：
+	0x4358e
+HINT：0x87
+函数名：	SrvNetCloseConnection
+HINT/NAME table RVA：
+	0x43570
+HINT：0x8d
+函数名：	SrvNetDisconnectConnection
+HINT/NAME table RVA：
+	0x43550
+HINT：0xa8
+函数名：	SrvNetSetConnectionInstanceId
+HINT/NAME table RVA：
+	0x43534
+HINT：0xf
+函数名：	SmbCryptoKeyTableDestroy
+HINT/NAME table RVA：
+	0x4351a
+HINT：0xe
+函数名：	SmbCryptoKeyTableCreate
+HINT/NAME table RVA：
+	0x43500
+HINT：0x41
+函数名：	SrvLibApplySrvDeviceAcl
+HINT/NAME table RVA：
+	0x434e8
+HINT：0x9a
+函数名：	SrvNetIsDriverLoaded
+HINT/NAME table RVA：
+	0x434cc
+HINT：0x2d
+函数名：	SrvAdminNodeUninitialize
+HINT/NAME table RVA：
+	0x434b2
+HINT：0x2a
+函数名：	SrvAdminNodeInitialize
+HINT/NAME table RVA：
+	0x43494
+HINT：0x95
+函数名：	SrvNetGetStatisticsAndLock
+HINT/NAME table RVA：
+	0x43478
+HINT：0x0
+函数名：	SmbCompressionDecompress
+HINT/NAME table RVA：
+	0x43464
+HINT：0x4
+函数名：	SmbCryptoDecrypt
+HINT/NAME table RVA：
+	0x4344c
+HINT：0x10
+函数名：	SmbCryptoKeyTableFind
+HINT/NAME table RVA：
+	0x43432
+HINT：0x12
+函数名：	SmbCryptoKeyTableRemove
+HINT/NAME table RVA：
+	0x43418
+HINT：0xd
+函数名：	SmbCryptoKeyDereference
+HINT/NAME table RVA：
+	0x433fe
+HINT：0x11
+函数名：	SmbCryptoKeyTableInsert
+HINT/NAME table RVA：
+	0x433dc
+HINT：0x2
+函数名：	SmbCryptoCreateServerCipherKeys
+HINT/NAME table RVA：
+	0x433c8
+HINT：0xab
+函数名：	SrvNetStartClient
+HINT/NAME table RVA：
+	0x433b0
+HINT：0xa3
+函数名：	SrvNetRegisterClient
+HINT/NAME table RVA：
+	0x43396
+HINT：0x8b
+函数名：	SrvNetDeregisterClient
+HINT/NAME table RVA：
+	0x43382
+HINT：0xac
+函数名：	SrvNetStopClient
+HINT/NAME table RVA：
+	0x43362
+HINT：0x8c
+函数名：	SrvNetDisableStatisticsQueue
+HINT/NAME table RVA：
+	0x4333e
+HINT：0x99
+函数名：	SrvNetInitializeStatisticsQueues
+HINT/NAME table RVA：
+	0x4331a
+HINT：0x85
+函数名：	SrvNetAllocateStatisticsQueuesEx
+HINT/NAME table RVA：
+	0x43306
+HINT：0x8f
+函数名：	SrvNetFreeBuffer
+HINT/NAME table RVA：
+	0x432ee
+HINT：0x81
+函数名：	SrvNetAllocateBuffer
+HINT/NAME table RVA：
+	0x432d6
+HINT：0x9c
+函数名：	SrvNetIsTdiConnection
+HINT/NAME table RVA：
+	0x445e4
+HINT：0x5
+函数名：	SmbCryptoHashCreate
+HINT/NAME table RVA：
+	0x445fa
+HINT：0x9
+函数名：	SmbCryptoHashGetOutputLength
+HINT/NAME table RVA：
+	0x4461a
+HINT：0x14
+函数名：	SmbCryptoUpdatePreauthIntegrityHashValue
+HINT/NAME table RVA：
+	0x44646
+HINT：0xa
+函数名：	SmbCryptoHashGetRecommendedSaltSize
+HINT/NAME table RVA：
+	0x4466c
+HINT：0x9b
+函数名：	SrvNetIsRdmaConnection
+HINT/NAME table RVA：
+	0x44686
+HINT：0x93
+函数名：	SrvNetGetRdmaNicInfo
+HINT/NAME table RVA：
+	0x4469e
+HINT：0xb
+函数名：	SmbCryptoHashUpdate
+HINT/NAME table RVA：
+	0x446b4
+HINT：0x7
+函数名：	SmbCryptoHashFinish
+HINT/NAME table RVA：
+	0x446ca
+HINT：0x6
+函数名：	SmbCryptoHashDestroy
+HINT/NAME table RVA：
+	0x446e2
+HINT：0x73
+函数名：	SrvLibQueryCredentialHandle
+HINT/NAME table RVA：
+	0x44700
+HINT：0x57
+函数名：	SrvLibGetBinary
+HINT/NAME table RVA：
+	0x44712
+HINT：0x4d
+函数名：	SrvLibCreateCredentialHandle
+HINT/NAME table RVA：
+	0x44732
+HINT：0x78
+函数名：	SrvLibS4U2SelfInitialize
+HINT/NAME table RVA：
+	0x4474e
+HINT：0x58
+函数名：	SrvLibGetDWord
+HINT/NAME table RVA：
+	0x44760
+HINT：0x13
+函数名：	SmbCryptoReadCipherSuiteOrderPolicySetting
+HINT/NAME table RVA：
+	0x4478e
+HINT：0x66
+函数名：	SrvLibKeyExists
+HINT/NAME table RVA：
+	0x447a0
+HINT：0x15
+函数名：	SrvAdminAllowAnonymousAccess
+HINT/NAME table RVA：
+	0x447c0
+HINT：0x77
+函数名：	SrvLibS4U2SelfCleanup
+HINT/NAME table RVA：
+	0x447d8
+HINT：0x4c
+函数名：	SrvLibCloseCredentialHandle
+HINT/NAME table RVA：
+	0x447f6
+HINT：0x74
+函数名：	SrvLibQueryLicensingDWord
+HINT/NAME table RVA：
+	0x44812
+HINT：0x30
+函数名：	SrvAdminRefreshAllowedServerNameList
+HINT/NAME table RVA：
+	0x4483a
+HINT：0x32
+函数名：	SrvAdminRefreshFsctlPropertyList
+HINT/NAME table RVA：
+	0x4485e
+HINT：0x33
+函数名：	SrvAdminRefreshPipeList
+HINT/NAME table RVA：
+	0x44878
+HINT：0xa4
+函数名：	SrvNetSendData
+HINT/NAME table RVA：
+	0x4488a
+HINT：0xa7
+函数名：	SrvNetSetConnectionInformation
+HINT/NAME table RVA：
+	0x448ac
+HINT：0xa6
+函数名：	SrvNetSetConnectionInboundMessageSizeLimit
+HINT/NAME table RVA：
+	0x448da
+HINT：0x53
+函数名：	SrvLibFreePipeEa
+HINT/NAME table RVA：
+	0x448ee
+HINT：0xb5
+函数名：	SrvXsDisconnect
+HINT/NAME table RVA：
+	0x44900
+HINT：0xb3
+函数名：	SrvXsClosePrinter
+HINT/NAME table RVA：
+	0x44914
+HINT：0x20
+函数名：	SrvAdminEvaluateServerAlias
+HINT/NAME table RVA：
+	0x44932
+HINT：0x7e
+函数名：	SrvLibTruncateDnsName
+HINT/NAME table RVA：
+	0x4494a
+HINT：0x27
+函数名：	SrvAdminIsScopedNameEx
+HINT/NAME table RVA：
+	0x44964
+HINT：0x86
+函数名：	SrvNetCheckEndpointState
+HINT/NAME table RVA：
+	0x44980
+HINT：0xa9
+函数名：	SrvNetSetConnectionServerName
+HINT/NAME table RVA：
+	0x449a0
+HINT：0x65
+函数名：	SrvLibIsNetworkAddress
+HINT/NAME table RVA：
+	0x449ba
+HINT：0x7d
+函数名：	SrvLibStandardizeIpAddress
+HINT/NAME table RVA：
+	0x449d8
+HINT：0x79
+函数名：	SrvLibSeAccessCheck
+HINT/NAME table RVA：
+	0x435ca
+HINT：0x96
+函数名：	SrvNetHostAddressAndPortToStringA
+HINT/NAME table RVA：
+	0x44a0a
+HINT：0x43
+函数名：	SrvLibAuditShareAccess
+HINT/NAME table RVA：
+	0x44a24
+HINT：0x75
+函数名：	SrvLibRetrieveMaximalAccessRightsForUser
+HINT/NAME table RVA：
+	0x44a50
+HINT：0x35
+函数名：	SrvAdminRegisterProvider
+HINT/NAME table RVA：
+	0x44a6c
+HINT：0x1b
+函数名：	SrvAdminDeregisterProvider
+HINT/NAME table RVA：
+	0x44a8a
+HINT：0x36
+函数名：	SrvAdminRegisterSession
+HINT/NAME table RVA：
+	0x44aa4
+HINT：0x34
+函数名：	SrvAdminRegisterFile
+HINT/NAME table RVA：
+	0x44abc
+HINT：0x5c
+函数名：	SrvLibInitializeIdleLogic
+HINT/NAME table RVA：
+	0x44ad8
+HINT：0x4b
+函数名：	SrvLibCleanupIdleLogic
+HINT/NAME table RVA：
+	0x44af2
+HINT：0x7f
+函数名：	SrvLibUpdateIdleLogic
+HINT/NAME table RVA：
+	0x44b0a
+HINT：0x3b
+函数名：	SrvAdminTakeActionToAllowPowerDown
+HINT/NAME table RVA：
+	0x44b30
+HINT：0x70
+函数名：	SrvLibMarkServerAsIdle
+HINT/NAME table RVA：
+	0x44b4a
+HINT：0x3
+函数名：	SmbCryptoCreateSigningKey
+HINT/NAME table RVA：
+	0x44b66
+HINT：0x88
+函数名：	SrvNetConnectionWillSign
+HINT/NAME table RVA：
+	0x44b82
+HINT：0x56
+函数名：	SrvLibGetBaseFileName
+HINT/NAME table RVA：
+	0x44b9a
+HINT：0x5f
+函数名：	SrvLibIsDosDeviceName
+HINT/NAME table RVA：
+	0x44bb2
+HINT：0x16
+函数名：	SrvAdminAllowClusterPipeAccess
+HINT/NAME table RVA：
+	0x44bd4
+HINT：0x38
+函数名：	SrvAdminRemapPipeName
+HINT/NAME table RVA：
+	0x44bec
+HINT：0x28
+函数名：	SrvAdminNodeGetNextId
+HINT/NAME table RVA：
+	0x44c04
+HINT：0x29
+函数名：	SrvAdminNodeGetSignature
+HINT/NAME table RVA：
+	0x44c20
+HINT：0x90
+函数名：	SrvNetFreePool
+HINT/NAME table RVA：
+	0x44c32
+HINT：0xb8
+函数名：	SrvXsSchedulePrintJob
+HINT/NAME table RVA：
+	0x44c4a
+HINT：0x1a
+函数名：	SrvAdminDeregisterFile
+HINT/NAME table RVA：
+	0x44c64
+HINT：0x4f
+函数名：	SrvLibFilePowerManagementClose
+HINT/NAME table RVA：
+	0x44c86
+HINT：0x2f
+函数名：	SrvAdminQueryResumeKeyTarget
+HINT/NAME table RVA：
+	0x44ca6
+HINT：0x2b
+函数名：	SrvAdminNodeInvalidateFile
+HINT/NAME table RVA：
+	0x44cc4
+HINT：0x3c
+函数名：	SrvAdminUpdateFileSessionID
+HINT/NAME table RVA：
+	0x44ce2
+HINT：0x1c
+函数名：	SrvAdminDeregisterSession
+HINT/NAME table RVA：
+	0x44cfe
+HINT：0x4e
+函数名：	SrvLibCreateSelfSD
+HINT/NAME table RVA：
+	0x44d14
+HINT：0x4a
+函数名：	SrvLibCheckAccess
+HINT/NAME table RVA：
+	0x44d28
+HINT：0x3a
+函数名：	SrvAdminSetSessionName
+HINT/NAME table RVA：
+	0x44d42
+HINT：0x5a
+函数名：	SrvLibGetSelfSid
+HINT/NAME table RVA：
+	0x44d56
+HINT：0x82
+函数名：	SrvNetAllocateBufferNoTransportHeader
+HINT/NAME table RVA：
+	0x44d7e
+HINT：0x98
+函数名：	SrvNetIncrementConnectionActiveCount
+HINT/NAME table RVA：
+	0x44da6
+HINT：0x89
+函数名：	SrvNetDecrementConnectionActiveCount
+HINT/NAME table RVA：
+	0x44dce
+HINT：0x1d
+函数名：	SrvAdminDeregisterTreeConnect
+HINT/NAME table RVA：
+	0x44dee
+HINT：0x37
+函数名：	SrvAdminRegisterTreeConnect
+HINT/NAME table RVA：
+	0x44e0c
+HINT：0x94
+函数名：	SrvNetGetServerNameFlags
+HINT/NAME table RVA：
+	0x44e28
+HINT：0x64
+函数名：	SrvLibIsNetwork
+HINT/NAME table RVA：
+	0x44e3a
+HINT：0x5b
+函数名：	SrvLibHasClaimsSentinel
+HINT/NAME table RVA：
+	0x44e54
+HINT：0x76
+函数名：	SrvLibS4U2SelfAuth
+HINT/NAME table RVA：
+	0x44e6a
+HINT：0x71
+函数名：	SrvLibMarkServerAsNotIdle
+HINT/NAME table RVA：
+	0x44e86
+HINT：0x3d
+函数名：	SrvAdminValidateSpn
+HINT/NAME table RVA：
+	0x44e9c
+HINT：0x9d
+函数名：	SrvNetMarkConnectionAuthenticated
+HINT/NAME table RVA：
+	0x44ec0
+HINT：0x1
+函数名：	SmbCryptoCreateApplicationKey
+HINT/NAME table RVA：
+	0x44ee0
+HINT：0x2e
+函数名：	SrvAdminNodeVerifySignature
+HINT/NAME table RVA：
+	0x44efe
+HINT：0x2c
+函数名：	SrvAdminNodeInvalidateSession
+HINT/NAME table RVA：
+	0x44f1e
+HINT：0x1f
+函数名：	SrvAdminDoesShareAllowAnonymous
+HINT/NAME table RVA：
+	0x44f40
+HINT：0x45
+函数名：	SrvLibAuditShareConnect
+HINT/NAME table RVA：
+	0x44f5a
+HINT：0x39
+函数名：	SrvAdminSetSessionIsCsvUser
+HINT/NAME table RVA：
+	0x44f78
+HINT：0xb4
+函数名：	SrvXsConnect
+HINT/NAME table RVA：
+	0x44f88
+HINT：0xb7
+函数名：	SrvXsOpenPrinter
+HINT/NAME table RVA：
+	0x44f9c
+HINT：0x1e
+函数名：	SrvAdminDoesPipeAllowAnonymous
+HINT/NAME table RVA：
+	0x44fbe
+HINT：0x3f
+函数名：	SrvLibAllocatePipeEa
+HINT/NAME table RVA：
+	0x44fd6
+HINT：0x51
+函数名：	SrvLibFilePowerManagementPreventIdle
+HINT/NAME table RVA：
+	0x44ffe
+HINT：0xb2
+函数名：	SrvXsAddPrintJob
+HINT/NAME table RVA：
+	0x45012
+HINT：0xaf
+函数名：	SrvNetValidateMemoryDescriptors
+HINT/NAME table RVA：
+	0x45034
+HINT：0x42
+函数名：	SrvLibAuditForceAccess
+HINT/NAME table RVA：
+	0x4504e
+HINT：0xa1
+函数名：	SrvNetReadDirectData
+HINT/NAME table RVA：
+	0x45066
+HINT：0x26
+函数名：	SrvAdminIsScopedName
+HINT/NAME table RVA：
+	0x4507e
+HINT：0x25
+函数名：	SrvAdminIsFsctlAllowedForSmb2
+HINT/NAME table RVA：
+	0x4509e
+HINT：0x5d
+函数名：	SrvLibIsAdmin
+HINT/NAME table RVA：
+	0x450ae
+HINT：0x5e
+函数名：	SrvLibIsAnonymous
+HINT/NAME table RVA：
+	0x450c2
+HINT：0x62
+函数名：	SrvLibIsInteractive
+HINT/NAME table RVA：
+	0x450d8
+HINT：0xb1
+函数名：	SrvNotifyGroveler
+HINT/NAME table RVA：
+	0x432b4
+HINT：0xa5
+函数名：	SrvNetSetConnectionActiveCount
+HINT/NAME table RVA：
+	0x4329c
+HINT：0xb0
+函数名：	SrvNetWriteDirectData
+HINT/NAME table RVA：
+	0x449ee
+HINT：0x48
+函数名：	SrvLibAuditSuccessEnabled
+--------------------------import table
+	Import Lookup Table RVA：0x41d30
+	时间戳：0x0
+	forward chain：0x0
+	DLL name address(RVA)：0x445d8
+小伙子你怎么回事？
+小伙子你怎么回事？
+小伙子你怎么回事？
+DLL的名字是：ksecdd.sys
+	Import Address Table RVA：0x41020
+没有绑定
+HINT/NAME table RVA：
+	0x444d2
+HINT：0x39
+函数名：	QueryContextAttributesW
+HINT/NAME table RVA：
+	0x444ec
+HINT：0x4
+函数名：	BCryptCloseAlgorithmProvider
+HINT/NAME table RVA：
+	0x4450c
+HINT：0x1f
+函数名：	BCryptOpenAlgorithmProvider
+HINT/NAME table RVA：
+	0x4452a
+HINT：0x1a
+函数名：	BCryptGetProperty
+HINT/NAME table RVA：
+	0x4453e
+HINT：0xd
+函数名：	BCryptDuplicateHash
+HINT/NAME table RVA：
+	0x444c0
+HINT：0x16
+函数名：	BCryptGenRandom
+HINT/NAME table RVA：
+	0x44566
+HINT：0x14
+函数名：	BCryptFinishHash
+HINT/NAME table RVA：
+	0x4457a
+HINT：0xa
+函数名：	BCryptDestroyHash
+HINT/NAME table RVA：
+	0x4458e
+HINT：0x5
+函数名：	BCryptCreateHash
+HINT/NAME table RVA：
+	0x445a2
+HINT：0x2f
+函数名：	ImpersonateSecurityContext
+HINT/NAME table RVA：
+	0x445c0
+HINT：0x3d
+函数名：	RevertSecurityContext
+HINT/NAME table RVA：
+	0x44494
+HINT：0x38
+函数名：	MapSecurityError
+HINT/NAME table RVA：
+	0x444a8
+HINT：0x29
+函数名：	DeleteSecurityContext
+HINT/NAME table RVA：
+	0x44554
+HINT：0x1b
+函数名：	BCryptHashData
+HINT/NAME table RVA：
+	0x44468
+HINT：0x2c
+函数名：	FreeContextBuffer
+HINT/NAME table RVA：
+	0x4447c
+HINT：0x0
+函数名：	AcceptSecurityContext

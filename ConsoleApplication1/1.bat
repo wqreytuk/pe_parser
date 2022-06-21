@@ -1,0 +1,4 @@
+del debug\1.obj
+cl /c /ZI /w /nologo  /Od  /Oy- /MT /D WIN32  /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1  /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\1.obj" /Gd /TP /analyze- /errorReport:prompt "main.cpp"
+link.exe /ERRORREPORT:PROMPT /OUT:"ConsoleApplication12.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\x\documents\visual studio 2012\Projects\ConsoleApplication1\Debug\ConsoleApplication1.lib" /MACHINE:X86 "Debug\1.obj"
+ConsoleApplication12.exe

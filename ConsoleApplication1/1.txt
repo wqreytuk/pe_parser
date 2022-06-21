@@ -1,0 +1,767 @@
+活动代码页: 936
+检测到魔术字符MZ，可能是一个PE文件，继续解析。。。
+定位到PE header偏移量为： 0x000000e8
+PE签名：PE
+machine type(处理器)：332    
+扇区数量：6
+PE文件生成时间（link)：Thu Jun 14 22:17:48 2012
+ 
+符号表偏移量（symbol table)：0x00000000
+符号数量（symbol number)：0
+00e0
+optional header size：224
+0d02
+characteristic value：3330
+下面输出启用了的标志位：
+	cao草你妈吗Image only. This indicates that the image file is valid and can be run. If this flag is not set, it indicates a linker error.仅适用于镜像文件，这个标志位表明了该镜像文件是合法的，可以正常运行，如果这个标志位没有启用，则说明存在链接器错误
+	Machine is based on a 32-bit-word architecture.
+	If the image is on removable media, fully load it and copy it to the swap file.
+	If the image is on network media, fully load it and copy it to the swap file.
+
+？？？？？？？？？？？？？？？？？？？？？？？？？？？？？开始----OPTIONAL HEADER----开始？？？？？？？？？？？？？？？？？？？？？？？？？？？？？
+==================================开始----STD部分----开始==================================
+010b
+magic：PE32，也就是32位
+链接器主版本号：10
+链接器次版本号：0
+PE文件中.text扇区的大小：319488 bytes
+PE文件中.data扇区的大小：131072 bytes
+PE文件中.bss扇区的大小：0 bytes
+entry point（RVA）地址：0x0000476b
+base of code（RVA）地址：0x00001000
+base of data（RVA）地址：0x0004f000
+
+==================================结束----STD部分----结束==================================
+
+==================================开始----windows部分----开始==================================
+image base地址：0x00400000
+section_alignment：4096 bytes
+file _alignment：512 bytes
+操作系统主版本号：5 
+操作系统次版本号：1 
+镜像文件主版本号：0 
+镜像文件次版本号：0 
+子系统主版本号：5 
+子系统次版本号：1 
+镜像加载到内存之后的大小：475136 bytes
+header总大小（向上取整filealignment）：1024 bytes
+checksum：1041901 
+子系统：
+	图形化子系统
+dll chacacteristic：
+	DLL can be relocated at load time.DLL在加载的时候可以被重新定位
+	Image is NX compatible。 NX意为no-execute是一种内存保护措施
+	Terminal Server aware.我不知道这个到底是什么意思
+size_of_stack_reserve_32：0x00100000 bytes
+size_of_stack_commit_32：0x00001000 bytes
+size_of_heap_reserve_32：0x00100000 bytes
+size_of_heap_commit_32：0x00001000 bytes
+data directory数量：16
+
+==================================结束----windows部分----结束==================================
+
+==================================开始----data directory部分----开始==================================
+export_table：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+import_table：
+	地址（RVA）：	0x0004d5c4
+	size：		300 bytes
+
+resource_table：
+	地址（RVA）：	0x00054000
+	size：		108980 bytes
+
+exception_table：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+certificate_table：
+	地址（RVA）：	0x000edae0
+	size：		15808 bytes
+
+base_relocation_table：
+	地址（RVA）：	0x0006f000
+	size：		12016 bytes
+
+debug：
+	地址（RVA）：	0x00001510
+	size：		28 bytes
+
+architecture：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+global_ptr：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+tls_table：
+	地址（RVA）：	0x00004428
+	size：		24 bytes
+
+load_config_table：
+	地址（RVA）：	0x000043e0
+	size：		64 bytes
+
+bound_import：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+iat：
+	地址（RVA）：	0x00001000
+	size：		1180 bytes
+
+delay_import_descriptor：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+clr_runtime_header：
+	地址（RVA）：	0x00000000
+	size：		0 bytes
+
+
+==================================结束----data directory部分----结束==================================
+
+？？？？？？？？？？？？？？？？？？？？？？？？？？？？？结束----OPTIONAL HEADER----结束？？？？？？？？？？？？？？？？？？？？？？？？？？？？？
+
+￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥开始----SECTION HEADERs----开始￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.text
+virtual size：319410 bytes
+virtual_address（RVA）：0x00001000
+size_of_raw_data：319488 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x00000400
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains executable code.
+	The section can be executed as code.
+	The section can be read.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.data
+virtual size：11900 bytes
+virtual_address（RVA）：0x0004f000
+size_of_raw_data：4096 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x0004e400
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section can be read.
+	The section can be written to.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.wixburn
+virtual size：56 bytes
+virtual_address（RVA）：0x00052000
+size_of_raw_data：512 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x0004f400
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section can be read.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.tls
+virtual size：9 bytes
+virtual_address（RVA）：0x00053000
+size_of_raw_data：512 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x0004f600
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section can be read.
+	The section can be written to.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.rsrc
+virtual size：108980 bytes
+virtual_address（RVA）：0x00054000
+size_of_raw_data：109056 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x0004f800
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section can be read.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+扇区(section)m名称：.reloc
+virtual size：16696 bytes
+virtual_address（RVA）：0x0006f000
+size_of_raw_data：16896 bytes
+pointer_to_raw_data（在PE文件中的地址）：0x0006a200
+pointer_to_relocations：0x00000000
+pointer_to_linenumbers：0x00000000
+number_of_relocations：0x00000000
+number_of_linenumbers：0x00000000
+扇区（section）characteristic flag：
+	下面输出启用了的标志位：
+	The section contains initialized data.
+	The section can be discarded as needed.
+	The section can be read.
+
+
+￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥结束----SECTION HEADERs----结束￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@开始----解析data directory----开始@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+--------------------------import table
+	Import Lookup Table RVA：0x4d7f8
+	时间戳：0x0
+	forward chain：0x0
+	DLL name address(RVA)：0x4dba2
+小伙子你怎么回事？
+小伙子你怎么回事？
+小伙子你怎么回事？
+DLL的名字是：KERNEL32.dll
+	Import Address Table RVA：0x1108
+没有绑定
+HINT/NAME table RVA：
+	0x4ea92
+HINT：0x357
+函数名：	MapViewOfFile
+HINT/NAME table RVA：
+	0x4eaa2
+HINT：0x8c
+函数名：	CreateFileMappingW
+HINT/NAME table RVA：
+	0x4eab8
+HINT：0x9e
+函数名：	CreateMutexW
+HINT/NAME table RVA：
+	0x4eac8
+HINT：0x46a
+函数名：	SetFileTime
+HINT/NAME table RVA：
+	0x4ead6
+HINT：0x346
+函数名：	LocalFileTimeToFileTime
+HINT/NAME table RVA：
+	0x4eaf0
+HINT：0xe4
+函数名：	DosDateTimeToFileTime
+HINT/NAME table RVA：
+	0x4eb08
+HINT：0x40f
+函数名：	ResetEvent
+HINT/NAME table RVA：
+	0x4eb16
+HINT：0x453
+函数名：	SetEndOfFile
+HINT/NAME table RVA：
+	0x4eb26
+HINT：0xd6
+函数名：	DeleteFileW
+HINT/NAME table RVA：
+	0x4eb34
+HINT：0x28c
+函数名：	GetThreadLocale
+HINT/NAME table RVA：
+	0x4eb46
+HINT：0x15e
+函数名：	FormatMessageW
+HINT/NAME table RVA：
+	0x4eb58
+HINT：0x1fb
+函数名：	GetFullPathNameW
+HINT/NAME table RVA：
+	0x4eb6c
+HINT：0x283
+函数名：	GetTempFileNameW
+HINT/NAME table RVA：
+	0x4eb80
+HINT：0x81
+函数名：	CreateDirectoryW
+HINT/NAME table RVA：
+	0x4eb94
+HINT：0x203
+函数名：	GetLocalTime
+HINT/NAME table RVA：
+	0x4eba4
+HINT：0x466
+函数名：	SetFilePointer
+HINT/NAME table RVA：
+	0x4ebb6
+HINT：0x18f
+函数名：	GetComputerNameW
+HINT/NAME table RVA：
+	0x4ebca
+HINT：0x88
+函数名：	CreateFileA
+HINT/NAME table RVA：
+	0x4ebd8
+HINT：0x24a
+函数名：	GetProcessHeap
+HINT/NAME table RVA：
+	0x4ebea
+HINT：0x215
+函数名：	GetModuleHandleA
+HINT/NAME table RVA：
+	0x4ebfe
+HINT：0x75
+函数名：	CopyFileW
+HINT/NAME table RVA：
+	0x4ec0a
+HINT：0x360
+函数名：	MoveFileExW
+HINT/NAME table RVA：
+	0x4ec18
+HINT：0x2ba
+函数名：	GlobalFree
+HINT/NAME table RVA：
+	0x4ec26
+HINT：0x2b3
+函数名：	GlobalAlloc
+HINT/NAME table RVA：
+	0x4ec34
+HINT：0x1f1
+函数名：	GetFileSizeEx
+HINT/NAME table RVA：
+	0x4ec44
+HINT：0x1bf
+函数名：	GetCurrentDirectoryW
+HINT/NAME table RVA：
+	0x4ec5c
+HINT：0x4bd
+函数名：	SystemTimeToFileTime
+HINT/NAME table RVA：
+	0x4ec74
+HINT：0x4be
+函数名：	SystemTimeToTzSpecificLocalTime
+HINT/NAME table RVA：
+	0x4ef24
+HINT：0x3b1
+函数名：	RaiseException
+HINT/NAME table RVA：
+	0x4ef36
+HINT：0x19a
+函数名：	GetConsoleCP
+HINT/NAME table RVA：
+	0x4ef46
+HINT：0x1ac
+函数名：	GetConsoleMode
+HINT/NAME table RVA：
+	0x4ef58
+HINT：0x487
+函数名：	SetStdHandle
+HINT/NAME table RVA：
+	0x4ef68
+HINT：0x51a
+函数名：	WriteConsoleA
+HINT/NAME table RVA：
+	0x4ef78
+HINT：0x1b0
+函数名：	GetConsoleOutputCP
+HINT/NAME table RVA：
+	0x4ef8e
+HINT：0x524
+函数名：	WriteConsoleW
+HINT/NAME table RVA：
+	0x4db8c
+HINT：0x2d3
+函数名：	HeapSetInformation
+HINT/NAME table RVA：
+	0x4e28c
+HINT：0x263
+函数名：	GetStartupInfoW
+HINT/NAME table RVA：
+	0x4e29e
+HINT：0x4a5
+函数名：	SetUnhandledExceptionFilter
+HINT/NAME table RVA：
+	0x4e2bc
+HINT：0x218
+函数名：	GetModuleHandleW
+HINT/NAME table RVA：
+	0x4e2d0
+HINT：0x4b2
+函数名：	Sleep
+HINT/NAME table RVA：
+	0x4e2d8
+HINT：0x245
+函数名：	GetProcAddress
+HINT/NAME table RVA：
+	0x4e2ea
+HINT：0x119
+函数名：	ExitProcess
+HINT/NAME table RVA：
+	0x4e2f8
+HINT：0x525
+函数名：	WriteFile
+HINT/NAME table RVA：
+	0x4e304
+HINT：0x264
+函数名：	GetStdHandle
+HINT/NAME table RVA：
+	0x4e314
+HINT：0x213
+函数名：	GetModuleFileNameA
+HINT/NAME table RVA：
+	0x4e32a
+HINT：0x214
+函数名：	GetModuleFileNameW
+HINT/NAME table RVA：
+	0x4e340
+HINT：0x161
+函数名：	FreeEnvironmentStringsW
+HINT/NAME table RVA：
+	0x4e35a
+HINT：0x1da
+函数名：	GetEnvironmentStringsW
+HINT/NAME table RVA：
+	0x4e374
+HINT：0x187
+函数名：	GetCommandLineW
+HINT/NAME table RVA：
+	0x4e386
+HINT：0x46f
+函数名：	SetHandleCount
+HINT/NAME table RVA：
+	0x4e398
+HINT：0x1f3
+函数名：	GetFileType
+HINT/NAME table RVA：
+	0x4e3a6
+HINT：0x262
+函数名：	GetStartupInfoA
+HINT/NAME table RVA：
+	0x4e3b8
+HINT：0xd1
+函数名：	DeleteCriticalSection
+HINT/NAME table RVA：
+	0x4e3d0
+HINT：0x4c7
+函数名：	TlsGetValue
+HINT/NAME table RVA：
+	0x4e3de
+HINT：0x4c5
+函数名：	TlsAlloc
+HINT/NAME table RVA：
+	0x4e3ea
+HINT：0x4c8
+函数名：	TlsSetValue
+HINT/NAME table RVA：
+	0x4e3f8
+HINT：0x4c6
+函数名：	TlsFree
+HINT/NAME table RVA：
+	0x4e402
+HINT：0x2ef
+函数名：	InterlockedIncrement
+HINT/NAME table RVA：
+	0x4e41a
+HINT：0x473
+函数名：	SetLastError
+HINT/NAME table RVA：
+	0x4e42a
+HINT：0x1c5
+函数名：	GetCurrentThreadId
+HINT/NAME table RVA：
+	0x4e440
+HINT：0x202
+函数名：	GetLastError
+HINT/NAME table RVA：
+	0x4e450
+HINT：0x2eb
+函数名：	InterlockedDecrement
+HINT/NAME table RVA：
+	0x4e468
+HINT：0x2cd
+函数名：	HeapCreate
+HINT/NAME table RVA：
+	0x4e476
+HINT：0x4ec
+函数名：	VirtualFree
+HINT/NAME table RVA：
+	0x4e484
+HINT：0x2cf
+函数名：	HeapFree
+HINT/NAME table RVA：
+	0x4e490
+HINT：0x3a7
+函数名：	QueryPerformanceCounter
+HINT/NAME table RVA：
+	0x4e4aa
+HINT：0x293
+函数名：	GetTickCount
+HINT/NAME table RVA：
+	0x4e4ba
+HINT：0x1c1
+函数名：	GetCurrentProcessId
+HINT/NAME table RVA：
+	0x4e4d0
+HINT：0x279
+函数名：	GetSystemTimeAsFileTime
+HINT/NAME table RVA：
+	0x4e4ea
+HINT：0x339
+函数名：	LeaveCriticalSection
+HINT/NAME table RVA：
+	0x4e502
+HINT：0xee
+函数名：	EnterCriticalSection
+HINT/NAME table RVA：
+	0x4e51a
+HINT：0x4c0
+函数名：	TerminateProcess
+HINT/NAME table RVA：
+	0x4e52e
+HINT：0x1c0
+函数名：	GetCurrentProcess
+HINT/NAME table RVA：
+	0x4e542
+HINT：0x4d3
+函数名：	UnhandledExceptionFilter
+HINT/NAME table RVA：
+	0x4e55e
+HINT：0x300
+函数名：	IsDebuggerPresent
+HINT/NAME table RVA：
+	0x4e572
+HINT：0x162
+函数名：	FreeLibrary
+HINT/NAME table RVA：
+	0x4e580
+HINT：0x2ec
+函数名：	InterlockedExchange
+HINT/NAME table RVA：
+	0x4e596
+HINT：0x33c
+函数名：	LoadLibraryA
+HINT/NAME table RVA：
+	0x4e5a6
+HINT：0x2e3
+函数名：	InitializeCriticalSectionAndSpinCount
+HINT/NAME table RVA：
+	0x4e5ce
+HINT：0x172
+函数名：	GetCPInfo
+HINT/NAME table RVA：
+	0x4e5da
+HINT：0x168
+函数名：	GetACP
+HINT/NAME table RVA：
+	0x4e5e4
+HINT：0x237
+函数名：	GetOEMCP
+HINT/NAME table RVA：
+	0x4e5f0
+HINT：0x30a
+函数名：	IsValidCodePage
+HINT/NAME table RVA：
+	0x4e602
+HINT：0x2cb
+函数名：	HeapAlloc
+HINT/NAME table RVA：
+	0x4e60e
+HINT：0x4e9
+函数名：	VirtualAlloc
+HINT/NAME table RVA：
+	0x4e61e
+HINT：0x2d2
+函数名：	HeapReAlloc
+HINT/NAME table RVA：
+	0x4e62c
+HINT：0x418
+函数名：	RtlUnwind
+HINT/NAME table RVA：
+	0x4e638
+HINT：0x2d4
+函数名：	HeapSize
+HINT/NAME table RVA：
+	0x4e644
+HINT：0x204
+函数名：	GetLocaleInfoA
+HINT/NAME table RVA：
+	0x4e656
+HINT：0x511
+函数名：	WideCharToMultiByte
+HINT/NAME table RVA：
+	0x4e66c
+HINT：0x266
+函数名：	GetStringTypeA
+HINT/NAME table RVA：
+	0x4e67e
+HINT：0x367
+函数名：	MultiByteToWideChar
+HINT/NAME table RVA：
+	0x4e694
+HINT：0x269
+函数名：	GetStringTypeW
+HINT/NAME table RVA：
+	0x4e6a6
+HINT：0x32b
+函数名：	LCMapStringA
+HINT/NAME table RVA：
+	0x4e6b6
+HINT：0x32d
+函数名：	LCMapStringW
+HINT/NAME table RVA：
+	0x4e6c6
+HINT：0x298
+函数名：	GetTimeZoneInformation
+HINT/NAME table RVA：
+	0x4e6e0
+HINT：0x61
+函数名：	CompareStringA
+HINT/NAME table RVA：
+	0x4e6f2
+HINT：0x64
+函数名：	CompareStringW
+HINT/NAME table RVA：
+	0x4e704
+HINT：0x2e2
+函数名：	InitializeCriticalSection
+HINT/NAME table RVA：
+	0x4e720
+HINT：0x52
+函数名：	CloseHandle
+HINT/NAME table RVA：
+	0x4e72e
+HINT：0x348
+函数名：	LocalFree
+HINT/NAME table RVA：
+	0x4e73a
+HINT：0x3fa
+函数名：	ReleaseMutex
+HINT/NAME table RVA：
+	0x4e74a
+HINT：0x2a4
+函数名：	GetVersionExW
+HINT/NAME table RVA：
+	0x4e75a
+HINT：0x24c
+函数名：	GetProcessId
+HINT/NAME table RVA：
+	0x4e76a
+HINT：0x3c0
+函数名：	ReadFile
+HINT/NAME table RVA：
+	0x4e776
+HINT：0xa0
+函数名：	CreateNamedPipeW
+HINT/NAME table RVA：
+	0x4e78a
+HINT：0x65
+函数名：	ConnectNamedPipe
+HINT/NAME table RVA：
+	0x4e79e
+HINT：0x47c
+函数名：	SetNamedPipeHandleState
+HINT/NAME table RVA：
+	0x4e7b8
+HINT：0x54e
+函数名：	lstrlenW
+HINT/NAME table RVA：
+	0x4e7c4
+HINT：0x4f9
+函数名：	WaitForSingleObject
+HINT/NAME table RVA：
+	0x4e7da
+HINT：0x380
+函数名：	OpenProcess
+HINT/NAME table RVA：
+	0x4e7e8
+HINT：0x8f
+函数名：	CreateFileW
+HINT/NAME table RVA：
+	0x4e7f6
+HINT：0x467
+函数名：	SetFilePointerEx
+HINT/NAME table RVA：
+	0x4e80a
+HINT：0x54d
+函数名：	lstrlenA
+HINT/NAME table RVA：
+	0x4e816
+HINT：0x403
+函数名：	RemoveDirectoryW
+HINT/NAME table RVA：
+	0x4e82a
+HINT：0x1ea
+函数名：	GetFileAttributesW
+HINT/NAME table RVA：
+	0x4e840
+HINT：0x11d
+函数名：	ExpandEnvironmentStringsW
+HINT/NAME table RVA：
+	0x4e85c
+HINT：0x4e8
+函数名：	VerifyVersionInfoW
+HINT/NAME table RVA：
+	0x4e872
+HINT：0x4e4
+函数名：	VerSetConditionMask
+HINT/NAME table RVA：
+	0x4e888
+HINT：0x285
+函数名：	GetTempPathW
+HINT/NAME table RVA：
+	0x4e898
+HINT：0x270
+函数名：	GetSystemDirectoryW
+HINT/NAME table RVA：
+	0x4e8ae
+HINT：0x27e
+函数名：	GetSystemWow64DirectoryW
+HINT/NAME table RVA：
+	0x4e8ca
+HINT：0x2ab
+函数名：	GetVolumePathNameW
+HINT/NAME table RVA：
+	0x4e8e0
+HINT：0x2af
+函数名：	GetWindowsDirectoryW
+HINT/NAME table RVA：
+	0x4e8f8
+HINT：0x26c
+函数名：	GetSystemDefaultLangID
+HINT/NAME table RVA：
+	0x4e912
+HINT：0x29c
+函数名：	GetUserDefaultLangID
+HINT/NAME table RVA：
+	0x4e92a
+HINT：0x1c8
+函数名：	GetDateFormatW
+HINT/NAME table RVA：
+	0x4e93c
+HINT：0x277
+函数名：	GetSystemTime
+HINT/NAME table RVA：
+	0x4e94c
+HINT：0x33f
+函数名：	LoadLibraryW
+HINT/NAME table RVA：
+	0x4e95c
+HINT：0x2e9
+函数名：	InterlockedCompareExchange
+HINT/NAME table RVA：
+	0x4e97a
+HINT：0x1e0
+函数名：	GetExitCodeThread
+HINT/NAME table RVA：
+	0x4e98e
+HINT：0xb5
+函数名：	CreateThread
+HINT
