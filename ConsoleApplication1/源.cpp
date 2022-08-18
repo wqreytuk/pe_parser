@@ -1965,6 +1965,8 @@ cout("\n￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥
 
 _ui export_table_raw_offset = 0;
 FUCK("export_table table RVA: 0x%0x\n",data_directory_map[_TEXT("export_table")].addr);
+// 有些pe文件根本就没有导出表，直接跳过，去处理导入表
+if(data_directory_map[_TEXT("export_table")].addr==0) goto import_table_label;
 for(int i=0;i<number_of_sections;i++) {
     FUCK("section virtual address : 0x%0x\n",p_section_header[i].virtual_address);
     FUCK("section raw file pointer: 0x%0x\n",p_section_header[i].pointer_to_raw_data);
@@ -2065,7 +2067,7 @@ while(1){
 	counter++;
 }
 // 2022-8-18
-
+import_table_label:
 // 最后，我们需要对其中的一部分data directory进行解析
 // 首先是import directory
 // 其格式如下：https://docs.microsoft.com/en-us/windows/win32/debug/pe-format#the-idata-section

@@ -1,4 +1,4 @@
-﻿生成启动时间为 2022/8/18 13:14:41。
+﻿生成启动时间为 2022/8/18 13:52:23。
      1>项目“C:\Users\x\pe_parser\pe_parser\ConsoleApplication1\ConsoleApplication1.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "源.cpp"
@@ -720,40 +720,40 @@
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 参见“sprintf”的声明
      1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(1816): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : 参见“strcat”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(1968): warning C4018: “<”: 有符号/无符号不匹配
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2001): warning C4018: “<”: 有符号/无符号不匹配
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2026): warning C4018: “<”: 有符号/无符号不匹配
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2050): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(1969): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2002): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2027): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2051): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 参见“strcpy”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2057): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2058): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 参见“sprintf”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2058): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2059): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : 参见“strcat”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2078): warning C4018: “<”: 有符号/无符号不匹配
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2163): warning C4018: “<”: 有符号/无符号不匹配
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2192): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2079): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2164): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2193): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : 参见“strcat”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2200): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2201): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 参见“strcpy”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2248): warning C4018: “<”: 有符号/无符号不匹配
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2253): warning C4018: “>”: 有符号/无符号不匹配
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2266): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2249): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2254): warning C4018: “>”: 有符号/无符号不匹配
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2267): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 参见“sprintf”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2267): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2268): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 参见“strcpy”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2268): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2269): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 参见“sprintf”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2269): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2270): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : 参见“strcat”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2323): warning C4018: “<”: 有符号/无符号不匹配
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2328): warning C4018: “>”: 有符号/无符号不匹配
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2341): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2324): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2329): warning C4018: “>”: 有符号/无符号不匹配
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2342): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 参见“sprintf”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2342): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2343): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 参见“strcpy”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2343): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2344): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 参见“sprintf”的声明
-     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2344): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(2345): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : 参见“strcat”的声明
      1>c:\users\x\pe_parser\pe_parser\consoleapplication1\源.cpp(143): warning C4715: “convert_rva_to_file_pointer”: 不是所有的控件路径都返回值
        Link:
@@ -763,4 +763,4 @@
 
 生成成功。
 
-已用时间 00:00:01.76
+已用时间 00:00:02.52
