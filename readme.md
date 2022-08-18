@@ -2,6 +2,8 @@
 
 **BUILD WITH VS2012**
 
+**PAY ATTENTION! THIS TOOL CAN ONLY WORK IN VS2012 DEBUGGER**
+
 I don't know how to export the functions in import table of PE file with [PE-bear](https://github.com/hasherezade/pe-bear-releases)
 
 ![image](https://user-images.githubusercontent.com/106856146/171994056-102b6834-f6ce-4957-a27d-530f2c126f14.png)

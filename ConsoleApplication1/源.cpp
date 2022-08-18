@@ -1,4 +1,4 @@
-#include<windows.h>
+﻿#include<windows.h>
 #include<TChar.h>
 #include<iostream>
 #include<time.h>
@@ -1755,6 +1755,7 @@ for(int i=0;i<15;i++){
 
 FUCK("0x%x\n",data_directory_map[_TEXT("import_table")].addr);
 
+
 cout("\n==================================结束----data directory部分----结束==================================");acout("\n");
 cout("\n？？？？？？？？？？？？？？？？？？？？？？？？？？？？？结束----OPTIONAL HEADER----结束？？？？？？？？？？？？？？？？？？？？？？？？？？？？？");acout("\n");
 
@@ -1958,6 +1959,112 @@ section_offset_counter+=40;acout("\n");
 FUCK("0x%x\n",data_directory_map[_TEXT("import_table")].addr);
 }
 cout("\n￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥结束----SECTION HEADERs----结束￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥");acout("\n");
+// 2022-8-18
+//我之前没有写export部分，只写了导入的dll和函数，现在有了新需求，导出函数我也要看一下
+// 先获取到export directory的偏移量
+
+_ui export_table_raw_offset = 0;
+FUCK("export_table table RVA: 0x%0x\n",data_directory_map[_TEXT("export_table")].addr);
+for(int i=0;i<number_of_sections;i++) {
+    FUCK("section virtual address : 0x%0x\n",p_section_header[i].virtual_address);
+    FUCK("section raw file pointer: 0x%0x\n",p_section_header[i].pointer_to_raw_data);
+    _ui fuckyou = p_section_header[i].virtual_address + p_section_header[i].virtual_size;
+    FUCK("fuckyou: 0x%x\n",fuckyou);
+    if(fuckyou >= data_directory_map[_TEXT("export_table")].addr) {
+        export_table_raw_offset =    data_directory_map[_TEXT("export_table")].addr- p_section_header[i].virtual_address+p_section_header[i].pointer_to_raw_data;break;
+    }
+}
+FUCK("raw offset disk addr 0x%08x", export_table_raw_offset);
+
+// 现在我们只需要使用seek就能定位到文件中import table的位置
+cout("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@开始----解析export data directory----开始@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");acout("\n");
+//偏移量24的地方是导出函数的名字的表的长度  长度为4
+strm.seekg (export_table_raw_offset+24);
+memset(buffer,0,64);
+strm.read(buffer, 4);
+time_stamp_umber_of_sections = _4_bytes_deal(buffer);
+printf("导出函数的名字表的长度为%d\n",time_stamp_umber_of_sections);
+_ui daochuhanshumingzibiaodechangdu1 = time_stamp_umber_of_sections;
+//偏移量32的地方是是一个地址，这个地址指向了名字表的地址，从这个地方开始逐个读取函数名字
+strm.seekg (export_table_raw_offset+32);
+// 需要将rva处理成物理地址
+strm.read(buffer, 4);
+time_stamp_umber_of_sections= _4_bytes_deal(buffer);
+cout("\tname table address(RVA)：");
+printf("0x%x\n",time_stamp_umber_of_sections);
+// 通过name addr rva获取到dll的用户名
+// 通过rva获取file pointer的方式和上面的一样，那我就把这一部分代码重写城函数把
+// 算了，懒得写了，直接写在这里算了
+// 栈好像溢出了，因为我把所有东西都写在main函数里了，感觉要爆炸了都
+// 一点东西都输不出来了
+_ui export_name_raw_offset;
+for(int i=0;i<number_of_sections;i++) {
+    FUCK("section virtual address : 0x%0x\n",p_section_header[i].virtual_address);
+    FUCK("section raw file pointer: 0x%0x\n",p_section_header[i].pointer_to_raw_data);
+    _ui fuckyou = p_section_header[i].virtual_address + p_section_header[i].virtual_size;
+    FUCK("fuckyou: 0x%x\n",fuckyou);
+    if(fuckyou >= time_stamp_umber_of_sections) {
+        cout("小伙子你怎么回事？\n");
+        cout("小伙子你怎么回事？\n");
+        FUCK("0x%x\n",time_stamp_umber_of_sections);
+        cout("小伙子你怎么回事？\n");
+         FUCK("0x%x\n",p_section_header[i].virtual_address);
+        FUCK("%x\n",(_ui)p_section_header[i].virtual_address);
+        FUCK("%x\n", p_section_header[i].pointer_to_raw_data);
+     export_name_raw_offset =   time_stamp_umber_of_sections - p_section_header[i].virtual_address+p_section_header[i].pointer_to_raw_data;
+        break;
+    }
+}
+
+strm.seekg (export_name_raw_offset);
+// 需要将rva处理成物理地址
+strm.read(buffer, 4);
+time_stamp_umber_of_sections= _4_bytes_deal(buffer);
+cout("\tname table address(RVA)：");
+printf("0x%x\n",time_stamp_umber_of_sections);
+export_name_raw_offset=time_stamp_umber_of_sections;
+for(int i=0;i<number_of_sections;i++) {
+    FUCK("section virtual address : 0x%0x\n",p_section_header[i].virtual_address);
+    FUCK("section raw file pointer: 0x%0x\n",p_section_header[i].pointer_to_raw_data);
+    _ui fuckyou = p_section_header[i].virtual_address + p_section_header[i].virtual_size;
+    FUCK("fuckyou: 0x%x\n",fuckyou);
+    if(fuckyou >= time_stamp_umber_of_sections) {
+        cout("小伙子你怎么回事？\n");
+        cout("小伙子你怎么回事？\n");
+        FUCK("0x%x\n",time_stamp_umber_of_sections);
+        cout("小伙子你怎么回事？\n");
+         FUCK("0x%x\n",p_section_header[i].virtual_address);
+        FUCK("%x\n",(_ui)p_section_header[i].virtual_address);
+        FUCK("%x\n", p_section_header[i].pointer_to_raw_data);
+     export_name_raw_offset =   time_stamp_umber_of_sections - p_section_header[i].virtual_address+p_section_header[i].pointer_to_raw_data;
+        break;
+    }
+}
+
+// 从 export_name_raw_offset 开始读，读取daochuhanshumingzibiaodechangdu1次
+//只能通过看最后一个是否是\0来判断字符串是否结束
+int counter =1;
+while(1){
+	char* hexxxxxx_sting = (char*)malloc(1234);
+	char  _tmnp_string2[1]="";
+	strcpy(hexxxxxx_sting, _tmnp_string2);
+	while(1) {
+
+		strm.seekg (export_name_raw_offset);
+		strm.read(buffer, 1);
+		export_name_raw_offset+=1;
+		char  _tmnp_string[2]={0};
+		sprintf(_tmnp_string,"%c",(unsigned char)buffer[0]);
+		strcat(hexxxxxx_sting, _tmnp_string);
+		if(strlen(_tmnp_string)==0) break;
+	}
+	printf("第%d个导出函数:\t\t\t %s\n\n",counter,hexxxxxx_sting);
+
+	free(hexxxxxx_sting);
+	if(daochuhanshumingzibiaodechangdu1==counter) break;
+	counter++;
+}
+// 2022-8-18
 
 // 最后，我们需要对其中的一部分data directory进行解析
 // 首先是import directory
@@ -1995,6 +2102,8 @@ while(1){
 memset(buffer,0,64);
 strm.read(buffer, 20);
 
+//现在回来看这段for循环，我已经不知道这是在干啥的了
+//哦，看上面的注释，这个是在读取结束循环
   for(int i=0;i<20;i++) {
             _boss_break_flag = 0;
             unsigned char _asd = 0;
@@ -2114,6 +2223,80 @@ printf("0x%x\n",time_stamp_umber_of_sections);
 _ila_rva = convert_rva_to_file_pointer(_ila_rva, p_section_header, number_of_sections);
 if(_is_bound>0) {
     // 是bound，先不管
+	cout("是bound，先不管\n");
+	// 靠，今天我碰到了bound  不过他这个好像没啥影响，是不是bound都可以直接使用Import Address Table RVA查看导入函数的名字
+	int _break_flag=0;
+    _ui _up_value = 0;
+    while(1) {
+        // cout("发生神魔是了？");
+         
+        FUCK("_ila_rva 0x%x\n", _ila_rva);
+        // 因为这是一个表，所以我们要一直不停地读，直到读取出来的image_bse_sizeof全都是空
+        // unbound
+        // 直接看ILT（import loookup table）即可
+        // 存在PE32和PE32+的区别，前者为32bit，后者为64bit
+        // 通过image_bse_sizeof我们可以确定他是pe32还是pe32+
+        _ui _hint_name_table_rva;
+        _ui _ordinal;
+        FUCK("_ila_rva 0x%x\n", _ila_rva);
+        
+        strm.seekg (_ila_rva+_up_value);
+        memset(buffer,0,64);
+        // PE32+占用64bit，即8bytes
+        strm.read(buffer, image_bse_sizeof);
+        _up_value+=image_bse_sizeof;
+        for(int i=0;i<image_bse_sizeof;i++) {
+            _break_flag = 0;
+            unsigned char _asd = 0;
+            _asd = (unsigned char)buffer[i];
+            if(_asd > 0) {break;}
+            if(i+2>image_bse_sizeof) _break_flag = 1;
+        }
+        if(_break_flag>0) break;
+        // Ordinal Number，这个字段只有在Ordinal/Name标志位启用的时候才会有意义
+        // 因此我们需要先查看最后一个bit位，因为最后一个bit位决定了Ordinal/Name标志位是否启用
+        _ui _temp_fucking_value;
+        if(image_bse_sizeof>4)
+            _temp_fucking_value = (_ui)buffer[7];
+        else
+            _temp_fucking_value = (_ui)buffer[3];
+        if(_temp_fucking_value>0) {
+            // 启用ordinal
+            hex_sting = (char*)malloc(4+1);memset(hex_sting,0,4+1);
+            sprintf(_tmnp_string,"%02x",(unsigned char)buffer[1]);
+            strcpy(hex_sting, _tmnp_string);
+            sprintf(_tmnp_string,"%02x",(unsigned char)buffer[0]);
+            strcat(hex_sting, _tmnp_string);
+            FUCK("hex_sting: %s",hex_sting);
+            free(hex_sting);
+            _ordinal = (_ui)strtoul(hex_sting,NULL,16);
+        } else {
+            _hint_name_table_rva = _4_bytes_deal(buffer);
+        
+            cout("HINT/NAME table RVA：");
+            printf("\n\t0x%x\n", _hint_name_table_rva);
+            // 将RVA转换成disk file pointer
+
+            _hint_name_table_rva = convert_rva_to_file_pointer(_hint_name_table_rva, p_section_header, number_of_sections);
+            
+            // 然年根据_hint_name_table_rva来读取HINT/NAME Table
+            strm.seekg (_hint_name_table_rva);
+            memset(buffer,0,64);
+            // 2bytes的hint，我暂时还不清楚这个hint有啥用
+            strm.read(buffer, 2);
+          // 、、 _up_value+=2;
+            _ui _hint = _2_bytes_deal(buffer);
+            cout("HINT：");
+            printf("0x%x\n", _hint);
+            
+            // 然后后面是要导入的函数的名称，ascii字符串，以NULL结尾，所以就一直读取就完事了
+            char function_name[4086]={0};
+            _read_ascii(_hint_name_table_rva+2, &strm, function_name);
+            // _up_value=_up_value+strlen(function_name)+1;
+            pout(hex_sting_dll_name);cout("-------");cout("函数名：");
+            printf("\t%s\n", function_name);
+        }
+    }
 } else {
     
     cout("没有绑定\n");

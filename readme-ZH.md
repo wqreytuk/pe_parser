@@ -1,5 +1,7 @@
 **本项目使用VS2012构建**
 
+**这个工具只能在VS2012的调试器中正常工作**
+
 [PE-bear](https://github.com/hasherezade/pe-bear-releases)好像没办法把import table中的函数导出来
 
 ![image](https://user-images.githubusercontent.com/106856146/171994056-102b6834-f6ce-4957-a27d-530f2c126f14.png)
