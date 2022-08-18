@@ -1,4 +1,4 @@
-[中文](https://github.com/wqreytuk/pe-parser/blob/main/readme-ZH.md)
+[中文](https://github.com/wqreytuk/pe_parser/blob/main/readme-ZH.md)
 
 **BUILD WITH VS2012**
 
