@@ -1,4 +1,4 @@
-﻿#include<windows.h>
+#include<windows.h>
 #include<TChar.h>
 #include<iostream>
 #include<time.h>
@@ -1849,6 +1849,7 @@ strm.read(buffer, 4);
 time_stamp_umber_of_sections = _4_bytes_deal(buffer);
 p_section_header[section_offset_counter/40].size_of_raw_data = time_stamp_umber_of_sections;
 cout("size_of_raw_data：");
+int mmmmmmotherfyucjerrawsize=time_stamp_umber_of_sections;
 printf("%u bytes\n", time_stamp_umber_of_sections);
 
 // pointer_to_raw_data  4bytes
@@ -1859,6 +1860,17 @@ time_stamp_umber_of_sections = _4_bytes_deal(buffer);
 p_section_header[section_offset_counter/40].pointer_to_raw_data = time_stamp_umber_of_sections;
 cout("pointer_to_raw_data（在PE文件中的地址）：");
 printf("0x%08x\n", time_stamp_umber_of_sections);
+// 有了sizeofrawdata和和rawsize之后就可以把.text的二进制内容读取出来了
+// 定位到内容在PE文件中起始位置
+//strm.seekg (time_stamp_umber_of_sections);
+//char* lulalulalei=(char*)malloc(mmmmmmotherfyucjerrawsize);
+//memset(lulalulalei,0,mmmmmmotherfyucjerrawsize);
+//strm.read(lulalulalei,mmmmmmotherfyucjerrawsize);
+// std::ofstream myFile ("data.bin",  std::ios::binary);
+// 
+//    myFile.write (lulalulalei, mmmmmmotherfyucjerrawsize);
+//	free(lulalulalei);
+//	myFile.close();
 
 // pointer_to_relocations  4bytes
 // 这个字段对于可执行文件没有意义，所以为0，但是对于dll等文件是有意义的，我们这里就老老实实获它的值就行了
