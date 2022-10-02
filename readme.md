@@ -26,3 +26,12 @@ result will be saved in .\motherfuckerout.txt
 turns out my code can only run normally with debugger: https://stackoverflow.com/questions/16696444/differences-between-running-an-executable-with-visual-studio-debugger-vs-without
 
 because the heap is different with debugger and standalone
+
+
+# 2022-10-02 更新
+
+提取shellcode到二进制文件的功能
+
+![image](https://user-images.githubusercontent.com/48377190/193454451-4d5782a5-3744-450f-9281-b00598ae624f.png)
+
+取消注释Line 1865~1873之前的代码注释即可，.text的内容会被写到data.bin文件中（覆盖写）
